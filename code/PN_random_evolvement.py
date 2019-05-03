@@ -26,7 +26,7 @@ while(round>0):
 		if((M_current>=np.dot(C_pre,S)).all()):
 			available_T.append(i)
 	# if there are any transition in available_T list, choose one to enable
-	if(len(available_T)>0):
+	if(available_T):
 		S=np.zeros([T_num,1])
 		S[available_T[rd.randint(0,len(available_T)-1)],0]=1
 		M_current=M_current+np.dot(C,S)
