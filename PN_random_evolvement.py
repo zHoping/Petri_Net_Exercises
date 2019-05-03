@@ -18,7 +18,7 @@ round=10 #set runtime
 
 while(round>0):
 	round=round-1
-	# if transition is available, add this transition into available_T list
+	# if a transition is available, add this transition into available_T list
 	available_T=[] 
 	for i in np.arange(T_num):
 		S=np.zeros([T_num,1])
